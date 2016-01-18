@@ -30,16 +30,16 @@
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                         <div class="form-group">
-                            <label class="col-md-4 control-label">Rut</label>
                             <div class="col-md-6">
-                                <input  type="text" class="form-control" name="rut" placeholder="Ej.: 11111111-k" id="rut">
+                                {!! Form::label('rut', 'Rut') !!}
+                                {!! Form::text('rut', ['class' => 'form-control', 'placeholder' => 'Ej.: 11111111-1']) !!}
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="col-md-4 control-label">Password</label>
                             <div class="col-md-6">
-                                <input type="password" class="form-control" name="password" placeholder="Min 6 caracteres">
+                                {!! Form::label('contraseña', 'Contraseña') !!}
+                                {!! Form::password('contraseña',['class' => 'form-control', 'placeholder' => 'Ingrese su contraseña']) !!}
                             </div>
                         </div>
 

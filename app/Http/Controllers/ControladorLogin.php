@@ -37,8 +37,7 @@ class ControladorLogin extends Controller
 
         // En caso de que la autenticación haya fallado manda un mensaje al formulario de login y también regresamos los valores enviados con withInput().
         return Redirect::to('/')
-            ->with('mensaje_error', 'Tus datos son incorrectos')
-            ->withInput();
+            ->with('mensaje_error', 'Tus datos son incorrectos')           ->withInput();
 
     }
 

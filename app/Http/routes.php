@@ -12,9 +12,7 @@
 */
 
 Route::controllers([
-	'/' => 'ControladorLogin',
-	'profesor' => 'ProfesorController',
-	'alumno' => 'AlumnoController',
+//	'/' => 'ControladorLogin',
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
