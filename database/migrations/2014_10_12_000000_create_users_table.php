@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration {
 			$table->string('rut',12)->unique();
 			$table->string('email',20)->unique();
 			$table->string('password', 60);
-			$table->string('tipo');
+			$table->enum('tipo', ['alumno', 'profesor']);
 			$table->rememberToken();
 			$table->timestamps();
 			$table->primaryKey('rut');

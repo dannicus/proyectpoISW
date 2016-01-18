@@ -12,12 +12,10 @@
 */
 
 Route::controllers([
-//	'/' => 'ControladorLogin',
-	'auth' => 'Auth\AuthController',
+	'auth' => 'Auth\AuthController',          //controlador registro
 	'password' => 'Auth\PasswordController',
 ]);
 
-Route::resource('alumno', 'AlumnoController');
 
 // Nos mostrará el formulario de login.
 Route::get('/', 'ControladorLogin@getIndex');
@@ -25,6 +23,8 @@ Route::get('/', 'ControladorLogin@getIndex');
 // Validamos los datos de inicio de sesión.
 Route::post('/', 'ControladorLogin@postLogin');
 
+
+/*
 // Nos indica que las rutas que están dentro de él sólo serán mostradas si antes el usuario se ha autenticado.
 Route::group(array('before' => 'auth'), function()
 {
@@ -33,4 +33,4 @@ Route::group(array('before' => 'auth'), function()
 
 	// Esta ruta nos servirá para cerrar sesión.
 	Route::get('logout', 'ControladorLogin@logOut');
-});
+});  */

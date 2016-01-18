@@ -1,11 +1,8 @@
 <?php
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
-use App\Http\Requests;
 use Illuminate\Support\Facades\Input;
-use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Redirect;
 
 
 class ControladorLogin extends Controller
@@ -14,8 +11,6 @@ class ControladorLogin extends Controller
 
     public function getIndex()
     {
-
-
         return $this->layout = view('login.indexLogin');
     }
 
@@ -37,7 +32,7 @@ class ControladorLogin extends Controller
 
         // En caso de que la autenticación haya fallado manda un mensaje al formulario de login y también regresamos los valores enviados con withInput().
         return Redirect::to('/')
-            ->with('mensaje_error', 'Tus datos son incorrectos')           ->withInput();
+            ->with('mensaje_error', 'Tus datos son incorrectos')->withInput();
 
     }
 

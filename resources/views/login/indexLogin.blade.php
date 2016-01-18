@@ -15,7 +15,7 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    @if (count($errors) > 0)
+                   @if (count($errors) > 0)
                         <div class="alert alert-danger">
                             <strong>ERROR!</strong> Acá te mostramos tus errores.<br><br>
                             <ul>
@@ -32,19 +32,19 @@
                         <div class="form-group">
                             <div class="col-md-6">
                                 {!! Form::label('rut', 'Rut') !!}
-                                {!! Form::text('rut', ['class' => 'form-control', 'placeholder' => 'Ej.: 11111111-1']) !!}
+                                {!! Form::text('rut', null, ['class' => 'form-control', 'placeholder' => 'Ej.: 11111111-1']) !!}
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-md-6">
                                 {!! Form::label('contraseña', 'Contraseña') !!}
-                                {!! Form::password('contraseña',['class' => 'form-control', 'placeholder' => 'Ingrese su contraseña']) !!}
+                                {!! Form::password('contraseña', null,['class' => 'form-control', 'placeholder' => 'Ingrese su contraseña']) !!}
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
+                            <div class="col-md-6">
                                 <div class="checkbox">
                                     <label>
                                         <input type="checkbox" name="remember"> Recuerdame
