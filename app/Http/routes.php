@@ -23,8 +23,9 @@ Route::get('/', 'ControladorLogin@getIndex');
 // Validamos los datos de inicio de sesión.
 Route::post('/', 'ControladorLogin@postLogin');
 
-Route::get('home', 'HomeController@index');
+//Route::get('home', 'HomeController@index');
 
+/*
 // Nos indica que las rutas que están dentro de él sólo serán mostradas si antes el usuario se ha autenticado.
 Route::group(array('before' => 'auth'), function()
 {
@@ -34,3 +35,4 @@ Route::group(array('before' => 'auth'), function()
 	// Esta ruta nos servirá para cerrar sesión.
 	Route::get('logout', 'ControladorLogin@logOut');
 });
+*/
