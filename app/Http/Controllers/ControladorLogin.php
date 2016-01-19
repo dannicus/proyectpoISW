@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 
+
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
 
@@ -49,10 +50,7 @@ class ControladorLogin extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
 
-    }
 
 
 }

@@ -38,8 +38,8 @@
 
                         <div class="form-group">
                             <div class="col-md-6">
-                                {!! Form::label('contraseña', 'Contraseña') !!}
-                                {!! Form::password('contraseña', null,['class' => 'form-control', 'placeholder' => 'Ingrese su contraseña']) !!}
+                                {!! Form::label('password', 'Contraseña') !!}
+                                {!! Form::password('password', null,['class' => 'form-control', 'placeholder' => 'Ingrese su contraseña']) !!}
                             </div>
                         </div>
 

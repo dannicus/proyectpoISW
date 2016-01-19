@@ -1,5 +1,9 @@
 @extends('layouts.masterLogin')
 
+@section('titulo')
+	Registro
+@stop
+
 
 @section('css')
 	<link href="{{ asset('css/login_estilo.css') }}" rel="stylesheet">
