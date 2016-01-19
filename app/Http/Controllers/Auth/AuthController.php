@@ -138,7 +138,7 @@ class AuthController extends Controller {
 	 */
 	public function loginPath()
 	{
-		return '/auth/login';
+		return '/index.php';
 	}
 
 
