@@ -5,7 +5,7 @@
 @stop
 
 @section('css')
-	<link href="{{ asset('css/login_estilo.css') }}" rel="stylesheet">
+	<link href="{!!  asset('css/login_estilo.css') !!}" rel="stylesheet">
 @stop
 
 

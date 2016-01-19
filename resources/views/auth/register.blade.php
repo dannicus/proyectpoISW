@@ -6,7 +6,7 @@
 
 
 @section('css')
-	<link href="{{ asset('css/login_estilo.css') }}" rel="stylesheet">
+	<link href="{!!  asset('css/login_estilo.css') !!}" rel="stylesheet">
 @stop
 
 @section('content')
@@ -20,14 +20,14 @@
 							<strong>ERROR!</strong> Acá te mostramos tus errores.<br><br>
 							<ul>
 								@foreach ($errors->all() as $error)
-									<li>{{ $error }}</li>
+									<li>{!! $error !!}</li>
 								@endforeach
 							</ul>
 						</div>
 					@endif
 
-					<form class="form-horizontal" role="form" method="POST" action="{{ url('/auth/register') }}">
-						<input type="hidden" name="_token" value="{{ csrf_token() }}">
+					<form class="form-horizontal" role="form" method="POST" action="{!! url('/auth/register') !!}">
+						<input type="hidden" name="_token" value="{!! csrf_token() !!}">
 
 						<div class="form-group">
 							<div class="col-md-6">

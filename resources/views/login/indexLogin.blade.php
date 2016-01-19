@@ -5,7 +5,7 @@
 @stop
 
 @section('css')
-    <link href="{{ asset('css/login_estilo.css') }}" rel="stylesheet">
+    <link href="{!! asset('css/login_estilo.css') !!}" rel="stylesheet">
 @stop
 
 @section('content')
@@ -26,8 +26,8 @@
                         </div>
                     @endif
 
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/auth/login') }}">
-                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{!! url('/auth/login') !!}">
+                        <input type="hidden" name="_token" value="{!! csrf_token() !!}">
 
                         <div class="form-group">
                             <div class="col-md-6">
@@ -57,7 +57,7 @@
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">Entrar</button>
 
-                                <a class="btn btn-link" href="{{ url('/password/email') }}">Olvidaste tu contraseña?</a>
+                                <a class="btn btn-link" href="{!! url('/password/email') !!}">Olvidaste tu contraseña?</a>
                             </div>
                         </div>
                     </form>
