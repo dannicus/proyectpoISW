@@ -47,7 +47,7 @@ class Registrar implements RegistrarContract {
 		$user =new User($request::all());
 		$user ->save();
 
-		\Redirect::route (url('auth.login'));
+		\Redirect::route (url('/auth/login'));
 
 	}
 
